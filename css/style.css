@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Rubik&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    background-color: #edebc9;
+}
+header{
+    background-color: #9dbfaf;
+}
