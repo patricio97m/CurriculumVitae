@@ -13,7 +13,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <h1>Curriculum vitae</h1>
@@ -25,7 +25,7 @@
         <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="#informacionPersonal">Información Personal</a>
+              <a class="nav-link" aria-current="page" href="#informacionPersonal">Información Personal</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#experiencia">Experiencia</a>
@@ -41,21 +41,22 @@
 
 
   <main>
-    <section class="container mt-3">
+    <section class="container bg-gradient border rounded-3 p-5" id="datos">
       <div class="text-center">
         <h2 id="informacionPersonal" class="bg-dark text-uppercase d-inline px-3">Información personal</h2>
       </div>
-      <div class="row mt-2">
+      <div class="row mt-5">
         <div class="col-6">
-          <img src="./img/foto-de-perfil.jpg" alt="foto-de-perfil" class="img-fluid rounded-circle border border-dark">
+          <img src="./img/foto-de-perfil.jpg" alt="foto-de-perfil" class="img-fluid rounded border border-dark">
         </div>
         <div class="col-6">
           <div class="text-center">
             <h3 class="px-3 bg-dark d-inline">Miranda Patricio</h3>
           </div>
-          <p class="pt-3 text-center border-bottom ">Programador • Desarrollador</p>
-          <p class="text-center">Sobre mi</p>
-          <p> Estudiante de desarrollador web, con conocimientos en lenguajes Frontend y Backend. Actualmente
+          <p class="pt-3 text-center border-bottom border-dark text-dark">Programador • Desarrollador</p>
+          <p class="text-center text-dark">Sobre mi</p>
+          <p class="text-dark"> Estudiante de desarrollador web, con conocimientos en lenguajes Frontend y Backend.
+            Actualmente
             cursando el segundo año de la carrera. También egresado en técnico electrónico y con experiencia en
             reparación y mantenimiento de software y hardware de PC. Cuento con cursos realizados y soy
             autodidacta con todo lo relacionado a programación e informática, dispuesto a seguir aprendiendo y
@@ -64,7 +65,7 @@
           <p>
             <a class="btn btn-dark" data-bs-toggle="collapse" href="#collapseExample" role="button"
               aria-expanded="false" aria-controls="collapseExample">
-              Información personal
+              Datos personales
             </a>
           </p>
           <div class="collapse" id="collapseExample">
@@ -88,14 +89,63 @@
       </div>
       <div class="accordion mt-2" id="accordionExample">
         <div class="accordion-item bg-dark">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed bg-primary bg-opacity-50 text-light" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              ▷ Reparación de PC
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>2016-2018</strong> <br> <br>
+              Realice esta actividad por cuenta propia, primero como ayudante y luego promocionando mi
+              trabajo a través de las distintas redes sociales. <br><br>
+              Actividades y funciones que realicé: <br>
+              • Cambio de piezas de hardware <br>
+              • Reparación y mantenimiento del sistema operativo Windows<br>
+              • Análisis y consultas sobre problemas relacionados a la informática
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion mt-2" id="accordionExample">
+        <div class="accordion-item bg-dark">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed bg-primary bg-opacity-50 text-light" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              ▷ Programador Java Jr.
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion mt-2" id="accordionExample">
+        <div class="accordion-item bg-dark">
           <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed bg-primary bg-opacity-50 text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <button class="accordion-button collapsed bg-primary bg-opacity-50 text-light" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+              aria-controls="collapseThree">
               Reparación de PC
             </button>
           </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
             </div>
           </div>
         </div>
