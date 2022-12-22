@@ -3,12 +3,18 @@
 *{
     padding: 0;
     margin: 0;
+    color: white;
 }
 body{
     font-family: 'Manrope', sans-serif;
     font-family: 'Rubik', sans-serif;
-    background-color: #edebc9;
+    background-color: #1a3c7d;
 }
-header{
-    background-color: #9dbfaf;
+
+img{
+    width: 25em;
+    height: 25em;
+}
+h1{
+    font-size:xx-large;
 }
