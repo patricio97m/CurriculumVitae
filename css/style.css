@@ -10,13 +10,14 @@ body{
     background-repeat: repeat-x;
     background-color: #fff
 }
-img{
-    width: 25em;
-    height: 25em;
+.imgPerfil{
+    width: 22em;
+    height: 20em;
 }
+
 h1{
     font-size:xx-large;
 }
 #datos{
-    background-color:whitesmoke;
+    background-color: white;
 }
