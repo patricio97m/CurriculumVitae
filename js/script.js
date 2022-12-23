@@ -2,12 +2,14 @@ const form = document.getElementById("newForm")
 const nombre = document.getElementById("name");
 const email = document.getElementById("email");
 const comentario = document.getElementById("comentarios");
-let regexNombre = /^[a-zA-Z]+$/;
+let regexNombre = /[a-zA-Z]+$/;
 let regexEmail = /^[0-9a-zA-Z._.-]+\@[0-9a-zA-Z._.-]+\.[0-9a-zA-Z._.-]+$/;
+let regexComentario = /^\s*$/;
 
 
 form.addEventListener("click", (e) => {
-    validarConsulta()
+    e.preventDefault();
+    validarConsulta();
 });
 
 function reset() {
@@ -32,9 +34,13 @@ function validarConsulta(){
         error = true;
         alert("Nombre inválido");
     }
-    if (!regexEmail.test(email.value)) {
+    else if (!regexEmail.test(email.value)) {
         error = true;
         alert("Email inválido");
+    }
+    else if (comentario.value == ""){
+        error = true;
+        alert("Ingrese un comentario");
     }
     else{
         submit();
