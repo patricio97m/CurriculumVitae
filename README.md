@@ -1,3 +1,7 @@
 # CurriculumVitae
 Página web para proyecto final de TICMAS
-# https://patricio97m.github.io/CurriculumVitae/
+# Página web en github pages
+https://patricio97m.github.io/CurriculumVitae/
+# Herramientas utilizadas
+- Editor de código fuente : VS Code
+- Framework CSS: Bootstrap
