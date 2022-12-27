@@ -4,8 +4,6 @@ const email = document.getElementById("email");
 const comentario = document.getElementById("comentarios");
 let regexNombre = /[a-zA-Z]+$/;
 let regexEmail = /^[0-9a-zA-Z._.-]+\@[0-9a-zA-Z._.-]+\.[0-9a-zA-Z._.-]+$/;
-let regexComentario = /^\s*$/;
-
 
 form.addEventListener("click", (e) => {
     e.preventDefault();

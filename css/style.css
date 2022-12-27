@@ -7,11 +7,13 @@ body{
     font-family: 'Manrope', sans-serif;
     font-family: 'Rubik', sans-serif;
     background-image: url(../img/fondo.png);
-    background-repeat: repeat-x;
-    background-color: #fff
+    background-repeat:repeat-x;
+    background-color: whitesmoke;
 }
-
-
+.button-height{
+    width: 10em;
+    height: 4em;
+}
 h1{
     font-size:xx-large;
 }
