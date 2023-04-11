@@ -5,6 +5,27 @@ const comentario = document.getElementById("comentarios");
 let regexNombre = /[a-zA-Z]+$/;
 let regexEmail = /^[0-9a-zA-Z._.-]+\@[0-9a-zA-Z._.-]+\.[0-9a-zA-Z._.-]+$/;
 
+
+var particles = Particles.init({
+	selector: '.background',
+    color: ['#073642', '#073642', '#073642'],
+    connectParticles: true,
+    responsive: [{
+        breakpoint: 800,
+      options: {
+          color: '#00C9B1',
+          maxParticles: 80,
+        connectParticles: false
+      },
+    }]
+    });
+window.onload = function() {
+    Particles.init({
+      selector: '.background'
+    });
+  };
+  
+
 form.addEventListener("click", (e) => {
     e.preventDefault();
     validarConsulta();
